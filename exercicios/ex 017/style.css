@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Medidas Absolutas :
+    cm, mm , in , px , pt, pc
+
+     Medidas Relativas 
+    em, ex, rem,vw, vh , %
+     */
+    
+}
+
+h1{
+    text-shadow: 1.4px 1px 1px black;
+    font:italic bolder 2em arial;
+    color: blue;
+}
+h2{
+     text-shadow: 1.4px 1px 1px black;
+    font:italic bold 2em arial;
+    color: rgb(59, 252, 255);
+}
+p{
+    background-color: azure;
+    text-shadow: 3px 3px 1.5px rgb(188, 201, 201)
+}
