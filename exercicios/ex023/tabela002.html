@@ -18,13 +18,22 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(91, 87, 87);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(182, 182, 182);
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
         thead,tfoot{
-            background-color: gray;
+            background-color: rgb(91, 87, 87);
             color:white;
         }
         .num{
