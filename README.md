@@ -15,5 +15,5 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
  
 <a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social/index.html">SITE MODULO 4 (Eu que fiz)</a>
 
-<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social(c Guanabara)/index.html">SITE MODULO 4 (Resolução)</a>
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social(comGuanabara)/index.html">SITE MODULO 4 (Resolução)</a>
 
