@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+menu{
+    display: none;
+}
+nav{
+    padding-top: 10px;
+    padding-left: -50px;
+}
+nav > div  {
+    width: 80px;
+    display: inline-block;
+    padding-left: 0px;
+}
+main{
+    width: 800px;
+}
