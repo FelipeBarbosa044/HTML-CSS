@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom,#5F2C82,#54AAA7);;
+}
+main{
+    width: 950px;
+    height: 350px;
+    transition: width 0.5s, height 0.5s;
+    display: inline-block;
+}
+div#principal{
+    width: 950px;
+    height:350px;
+    display: inline-block;
+    position: relative;
+}
+div#imagem{
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    width: 475px;
+    height: 350px;
+    border-top: none;
+    border-radius: 0px 20px 20px 0px;
+}
+form > h1{
+    width: 455px;
+    margin-bottom: 10px;
+}
+form > p{
+    font-size: 12pt !important;
+    width: 455px;
+    margin-bottom: 20px;
+}
+div#formulario{
+    width: 475px;
+}
+.dados{
+    width: 395px;
+}
+input[type = "submit"]{
+    width: 455px;
+}
+div#botao{
+    width: 455px;
+}
+div#botao > a{
+    left: 60%;
+} 

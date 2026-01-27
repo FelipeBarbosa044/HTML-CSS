@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/mobile.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/telas-grandes.css" media="screen and (min-width: 992px)">
+</head>
+<body>
+    <main>
+        
+        <div id="principal">
+            <form action="login.php" method="post" autocomplete="on">
+                <div onclick="mudouCor3()" id="imagem">
+                </div>
+                <h1 onclick="mudouCor3()">Login</h1>
+                <p onclick="mudouCor3()">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <div id="formulario" >
+                        <label onclick="mudouCor()" for="iemail"  class="campos">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EFEFEF"><path d="M480-480.67q-66 0-109.67-43.66Q326.67-568 326.67-634t43.66-109.67Q414-787.33 480-787.33t109.67 43.66Q633.33-700 633.33-634t-43.66 109.67Q546-480.67 480-480.67ZM160-160v-100q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17t125.33 15.5q62 15.5 127.34 45.17 30.33 14.33 48.83 41.83T800-260v100H160Z"/></svg>
+                            <input class="dados" type="email" name="email" id="iemail" required maxlength="30" size="19" placeholder="seu e-mail" autocomplete="email">
+                        </label>
+                        <label onclick="mudouCor1()" for="isenha"  class="campos">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EFEFEF"><path d="M280-240q-100 0-170-70T40-480q0-100 70-170t170-70q81 0 141.5 45.5T506-560h414v160h-80v160H680v-160H506q-24 69-84.5 114.5T280-240Zm0-160q33 0 56.5-23.5T360-480q0-33-23.5-56.5T280-560q-33 0-56.5 23.5T200-480q0 33 23.5 56.5T280-400Z"/></svg>
+                        <input  class="dados" type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="19" placeholder="sua senha" autocomplete="current-password">
+                    </label>
+            
+                </div>
+                <input type="submit" value="Entrar">
+            
+                <div id="botao" onclick="mudouCor3()">
+                        <a href="esqueci.html" target="_blank" rel="canonical">Esqueci a senha<svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e000000"><path d="M194-214q-32.73 0-55.36-22.64Q116-259.27 116-292v-376q0-32.72 22.64-55.36Q161.27-746 194-746h572q33.72 0 55.86 22.64T844-668v376q0 32.73-22.14 55.36Q799.72-214 766-214H194Zm286-241 318-190-16-55-302 183-302-183-16 55 318 190Z"/></svg></a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        function mudouCor(){
+            iemail.style.background = 'white'
+            isenha.style.background = '#94CFCD'
+        }
+        function mudouCor1(){
+            isenha.style.background = 'white'
+            iemail.style.background = '#94CFCD'
+        }
+         function mudouCor3(){
+            isenha.style.background = '#94CFCD'
+            iemail.style.background = '#94CFCD'
+        }
+
+    </script>
+</body>
+</html>
