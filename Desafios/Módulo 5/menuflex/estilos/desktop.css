@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+header{
+    flex-flow: row nowrap;
+    height: 40px;
+    padding-top: 10px;
+    
+}
+nav#opçoes{
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+header > h1{
+    padding-top: 5px;
+    width: 500px;
+}
+main{
+    height: 589px;
+}

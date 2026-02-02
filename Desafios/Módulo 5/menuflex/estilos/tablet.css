@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+header{
+    align-items: flex-start;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+}
+menu{
+    display: none;
+}
+nav#opçoes{
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 99%;
+    height: 39px;
+    padding-left: 5px;
+    
+}
+nav#opçoes > a{
+    width: 80px;
+    height: 38.5px;
+    margin-right: 10.5px;
+    margin-top: 5px;
+}
+main{
+    flex-flow: row wrap;
+    align-items: center;
+    height: 470px;
+    padding-top: 5px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.456);
+}
+

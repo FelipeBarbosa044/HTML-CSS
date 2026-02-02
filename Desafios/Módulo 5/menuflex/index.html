@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu FlexBox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/mobile.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 580px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 762px)">
+</head>
+<body onresize="mudou()">
+    <header>
+        <h1>Meu Site</h1>
+        
+        <menu><i class="material-icons" onclick="menu()">menu</i></menu>
+        <nav id="opçoes">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>God of War 1</h2>
+        <p>God of War foi lançado em 2005, exclusivamente para o PlayStation 2, e rapidamente se destacou como um dos títulos mais marcantes da geração.
+        Ambientado na mitologia grega, o jogo apresentou Kratos, um protagonista distante do arquétipo de herói, movido por culpa, ódio e manipulação divina.
+        </p>
+        <picture>
+            <source media="(max-width:580px)" srcset="imagens/gow1-mobile.jpg">
+            <source media="(max-width: 762px)" srcset="imagens/gow1-M.jpg">
+            <source media="(min-width: 762px)" srcset="imagens/gow1-desktop.jpg">
+            <img src="imagens/gow1-mobile.jpg" alt="Capa do Jogo God of War 1">
+        </picture>
+    </main>
+    <script>
+        function menu(){
+            let menu = document.getElementById('opçoes')
+            if(menu.style.display == 'none'){
+                menu.style.display = 'flex'
+            }else{
+                menu.style.display = 'none'
+            }    
+        }
+        function mudou(){
+            let menu = document.getElementById('opçoes')
+            if (window.innerWidth >= 580){
+                menu.style.display = 'flex'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
