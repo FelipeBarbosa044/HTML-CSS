@@ -12,15 +12,12 @@ header{
     display: flex;
     flex-flow: row wrap;
     padding: 20px;
-    
-}
-header > h1{
-    width: 450px;
 }
 p{
     flex-grow: 5;
     margin-top: 20px;
     line-height: 1.5;
+    text-align: justify;
 }
 main{
     background-color:#D3D3D3 ;
