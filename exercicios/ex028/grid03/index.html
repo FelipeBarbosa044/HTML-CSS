@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border: 3px solid blue;
+            display: grid;
+            gap: 10px;
+            
+            grid-template: repeat(3,80px) / 100px  20% repeat(2,10fr);
+
+            grid-auto-flow: row;
+
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+
+            place-items: normal normal;
+
+            place-content: normal normal;
+
+        }
+        .item{
+            background-color: rgb(145, 145, 105);
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
