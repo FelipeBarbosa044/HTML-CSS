@@ -18,3 +18,29 @@
     grid-area: 2 / 4 / -2 / -2;
     
 }
+
+#porcentagem{
+   display: grid;
+   grid-template-columns: auto auto;
+}
+.text{
+    flex-flow: row wrap;
+}
+.projeto{
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+.imagem {
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    grid-area: 1 / 2 /-1 /-1;
+}
+.imagem > img{
+    display: none;
+}
+#fotos{
+     background-image: url(../imagens/projeto-06-album.jpg);
+     background-size: cover;
+     background-position: center;
+}
