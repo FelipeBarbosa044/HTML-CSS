@@ -1,11 +1,16 @@
 #container{
     grid-template: 20px 1fr 20px/ 20px 300px 20px 1.4fr 20px ;
 }
-#ficha{
+#borda-superior{
     position: sticky;
     top: 0;
+}
+#ficha{
     grid-area: 2 / 2 / -2 / 3;
     padding: 20px;
+    position: sticky;
+    top: 60px;
+    align-self: start; 
 }
 #ficha >  section{
     padding-top: 5px;
@@ -18,29 +23,61 @@
     grid-area: 2 / 4 / -2 / -2;
     
 }
-
 #porcentagem{
-   display: grid;
-   grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .text{
-    flex-flow: row wrap;
+    display: block;
+}
+.text > p{
+    display: inline-block;
+}
+.valor{
+    float: right;
 }
 .projeto{
+    min-height: 25vh;
     display: grid;
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: 1fr 20%;
 }
+
 .imagem {
     border-radius: 10px;
     margin-bottom: 0px;
-    margin-left: 20px;
-    grid-area: 1 / 2 /-1 /-1;
+    grid-area: 1 / 2 / -1 / -1;
 }
-.imagem > img{
+img{
     display: none;
 }
 #fotos{
-     background-image: url(../imagens/projeto-06-album.jpg);
-     background-size: cover;
-     background-position: center;
+
+    background-image: url(../imagens/projeto-06-album.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#login{
+    background-image: url(../imagens/projeto-05-login.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#sociais{
+    background-image: url(../imagens/projeto-04-links.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#android{
+    background-image: url(../imagens/projeto-03-android.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#cordel{
+    background-image: url(../imagens/projeto-02-cordel.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#videos{
+    background-image: url(../imagens/projeto-01-videos.jpg);
+    background-size: cover;
+    background-position: center center;
 }
