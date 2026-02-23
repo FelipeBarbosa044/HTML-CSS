@@ -1,10 +1,6 @@
 #container{
     grid-template: 20px 1fr 20px/ 20px 300px 20px 1.4fr 20px ;
 }
-#borda-superior{
-    position: sticky;
-    top: 0;
-}
 #ficha{
     grid-area: 2 / 2 / -2 / 3;
     padding: 20px;
@@ -37,7 +33,7 @@
     float: right;
 }
 .projeto{
-    min-height: 25vh;
+    aspect-ratio: 1.1 / 0.2;
     display: grid;
     grid-template-columns: 1fr 20%;
 }

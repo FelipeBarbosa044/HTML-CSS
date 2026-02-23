@@ -34,7 +34,7 @@ header{
     flex-wrap: nowrap;
     align-items: center;
     background-color: var(--cor-principal);
-    z-index: 1000; /*Controla a camada*/
+    z-index: 1; /*Controla a camada*/
 }
 header > p > i{
     text-align: center;
