@@ -12,6 +12,13 @@
     --cor-principal: #0077FF;
     --cor-defundo: #F5F5F5;
     --cor-elemento: #66BBFF;
+
+
+    /*Cores Noturna*/
+    --cor-principal-reverso: #FF5522;
+    --cor-defundo-reverso: #222222;
+    --cor-elemento-reverso: #444444;
+
 }
 
 *{
@@ -25,6 +32,13 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+body.escuro h2{
+    /*Modo escuro*/
+    color: var(--cor-principal-reverso);
+}
+body.escuro p{
+    color: #E0E0E0;
+}
 header{
     padding-right: 5px;
     position: sticky;
@@ -35,10 +49,10 @@ header{
     align-items: center;
     background-color: var(--cor-principal);
     z-index: 1; /*Controla a camada*/
+    transition: background-color 0.3s ;
 }
 body.escuro header{ /*Modo escuro*/
     background-color: #FF5522;
-    transition: background-color 0.5s;
 }
 header > p > i{
     text-align: center;
@@ -46,6 +60,11 @@ header > p > i{
     width: 25px;
     color: white;
     border-radius: 5px;
+    transition: color 0.3s;
+}
+body.escuro > header > p > i{
+    color:var(--cor-elemento-reverso);
+
 }
 header > p > i:hover{
     color: var(--cor-principal);
@@ -55,18 +74,29 @@ header > p > i:hover{
     transition-timing-function: ease;
 }
 body.escuro> header > p > i:hover{/*Modo escuro*/
-    background-color: #FF5522;
+    background-color: #b53d18d8;
+    color: var(--cor-principal-reverso);
 }
 #container{
     display: grid;
     grid-template: 20px 0.3fr 20px 5fr 20px / 4vw auto 4vw;
     background-color: var(--cor-defundo);
+    transition: background-color 0.3s ;
+}
+body.escuro> #container{
+    /*Modo Escuro*/
+    background-color: var(--cor-defundo-reverso);
 }
 #ficha{
     padding: 20px;
     grid-area: 2 / 2 / 3 / 3;
     background-color: white;
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+body.escuro  #ficha{
+    /*Modo Escuro*/
+    background-color: var(--cor-elemento-reverso);
 }
 main > div#ficha > article  {
     display: flex;
@@ -84,6 +114,13 @@ main > div#ficha > article  {
 
     width: 190px;
     height: 190px;
+
+    transition: color 0s;
+}
+body.escuro #ficha >  article > div{
+    /*Modo Escuro*/
+    border: 5px solid var(--cor-elemento-reverso);
+    outline: 5px solid var(--cor-principal-reverso);
 }
 h2{
     color: var(--cor-principal);
@@ -106,6 +143,10 @@ h2{
     font-size: 1.6em;
     padding: 7px;
     padding-bottom: 0px;
+}
+body.escuro #ficha > nav > a > i{
+    /*Modo Escuro*/
+    color: var(--cor-principal-reverso);
 }
 #ficha >   nav >  a > i:hover{
     cursor: pointer;

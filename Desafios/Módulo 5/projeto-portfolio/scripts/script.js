@@ -1,5 +1,6 @@
 const botao = document.getElementById('botao-tema');
 const body = document.body;
+const header = document.getElementsByTagName('header')[0]
 
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
@@ -20,6 +21,7 @@ botao.addEventListener('click', () => {
   const isescuro = body.classList.toggle('escuro');
   temaEscuro(isescuro);
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+  
 });
 
 // Scroll suave para links de navegação
