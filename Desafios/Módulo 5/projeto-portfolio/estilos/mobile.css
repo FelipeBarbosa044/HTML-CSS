@@ -36,6 +36,10 @@ header{
     background-color: var(--cor-principal);
     z-index: 1; /*Controla a camada*/
 }
+body.escuro header{ /*Modo escuro*/
+    background-color: #FF5522;
+    transition: background-color 0.5s;
+}
 header > p > i{
     text-align: center;
     padding: 14px;
@@ -49,6 +53,9 @@ header > p > i:hover{
     cursor: pointer;
     transition: background-color 0.1s, color 0.5s;
     transition-timing-function: ease;
+}
+body.escuro> header > p > i:hover{/*Modo escuro*/
+    background-color: #FF5522;
 }
 #container{
     display: grid;
