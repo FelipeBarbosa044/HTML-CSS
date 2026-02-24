@@ -2,7 +2,6 @@
 const botao = document.getElementById('botao-tema');
 const body = document.body;
 const header = document.getElementsByTagName('header')[0]
-const fotosprojeto = document.getElementById('mais-album')
 
 
 // Persistência do tema
@@ -42,7 +41,7 @@ function exibir(nome = '',indice = 0){
 }
 
 // Scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a.link');
+const navLinks = document.querySelectorAll('menu  a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();

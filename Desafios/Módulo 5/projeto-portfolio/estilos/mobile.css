@@ -74,7 +74,7 @@ header{
 body.escuro header{ /*Modo escuro*/
     background-color: #FF5522;
 }
-header > p > i{
+header > menu > a > i{
     text-align: center;
     padding: 14px;
     width: 25px;
@@ -82,19 +82,26 @@ header > p > i{
     border-radius: 5px;
     transition: color 0.6s;
 }
-body.escuro > header > p > i{
+header > menu > a > p{
+    text-align: center;
+    padding: 14px;
+    width: 25px;
+    color: white;
+    border-radius: 5px;
+    transition: color 0.6s;
+}
+body.escuro header >  menu > a > i{
     /*Modo escuro*/
     color:var(--cor-defundo-reverso);
-
 }
-header > p > i:hover{
+header > menu > a > i:hover{
     color: var(--cor-principal);
     background-color: #5c9de8;
     cursor: pointer;
     transition: background-color 0.1s, color 0.5s;
     transition-timing-function: ease;
 }
-body.escuro> header > p > i:hover{/*Modo escuro*/
+body.escuro> header > menu > a > i:hover{/*Modo escuro*/
     background-color: #b53d18d8;
     color: var(--cor-principal-reverso);
 }
