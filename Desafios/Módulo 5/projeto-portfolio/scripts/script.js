@@ -1,6 +1,9 @@
+//Variáveis
 const botao = document.getElementById('botao-tema');
 const body = document.body;
 const header = document.getElementsByTagName('header')[0]
+const fotosprojeto = document.getElementById('mais-album')
+
 
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
@@ -24,6 +27,20 @@ botao.addEventListener('click', () => {
   
 });
 
+
+//Aplicando conteúdo ao clicar no saiba mais...
+function exibir(nome = '',indice = 0){
+  let conteudo = document.getElementById(nome)
+  let mais = document.getElementsByClassName('mais')[indice]
+  if(conteudo.style.display == "block"){
+      mais.innerHTML = `<i class="fa-solid fa-play"></i> Saiba mais...`
+      conteudo.style.display = "none"
+  }else{
+    mais.innerHTML= `<i class="fa-solid fa-angle-down"></i>  Saiba mais...`
+    conteudo.style.display = "block"
+  }
+}
+
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
@@ -40,3 +57,5 @@ navLinks.forEach(link => {
     }
   });
 });
+
+

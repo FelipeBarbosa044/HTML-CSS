@@ -37,7 +37,27 @@ body.escuro h2{
     color: var(--cor-principal-reverso);
 }
 body.escuro p{
+    /*Modo escuro*/
     color: #E0E0E0;
+}
+body.escuro p > strong{
+    /*Modo escuro*/
+    color: #E0E0E0;
+}
+body.escuro span > strong{
+    /*Modo escuro*/
+    color: #E0E0E0
+}
+body.escuro #formacao > div > h3{
+    /*Modo escuro*/
+    color: #A73917;
+}
+body.escuro #formacao > div > p{
+    /*Modo escuro*/
+    color: #E0E0E0
+}
+body.escuro  h3{
+    color: #E0E0E0
 }
 header{
     padding-right: 5px;
@@ -49,7 +69,7 @@ header{
     align-items: center;
     background-color: var(--cor-principal);
     z-index: 1; /*Controla a camada*/
-    transition: background-color 0.3s ;
+    transition: background-color 0.5s ;
 }
 body.escuro header{ /*Modo escuro*/
     background-color: #FF5522;
@@ -60,10 +80,11 @@ header > p > i{
     width: 25px;
     color: white;
     border-radius: 5px;
-    transition: color 0.3s;
+    transition: color 0.6s;
 }
 body.escuro > header > p > i{
-    color:var(--cor-elemento-reverso);
+    /*Modo escuro*/
+    color:var(--cor-defundo-reverso);
 
 }
 header > p > i:hover{
@@ -81,7 +102,7 @@ body.escuro> header > p > i:hover{/*Modo escuro*/
     display: grid;
     grid-template: 20px 0.3fr 20px 5fr 20px / 4vw auto 4vw;
     background-color: var(--cor-defundo);
-    transition: background-color 0.3s ;
+    transition: background-color 0.5s ;
 }
 body.escuro> #container{
     /*Modo Escuro*/
@@ -154,12 +175,21 @@ body.escuro #ficha > nav > a > i{
     transition: color 0.5s;
     transition-timing-function: ease;
 }
+body.escuro #ficha >   nav >  a > i:hover{
+    /*Modo Escuro*/
+    color: #b63c18;
+}
 #detalhes{
     display: grid;
     grid-template: auto 20px 0.1fr 20px 0.1fr 20px 1fr/1fr 1fr;
     grid-area: 4 / 2 / 5 / 3;
     background-color: var(--cor-defundo);
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+body.escuro #detalhes{
+    /*Modo Escuro*/
+    background-color: var(--cor-defundo-reverso);
 }
 #video{
     padding: 20px;
@@ -167,6 +197,11 @@ body.escuro #ficha > nav > a > i{
     background-color: white;
     border-radius: 10px;
     grid-area: 1 / 1 / 2 / -1;
+    transition: background-color 0.3s;
+}
+body.escuro #video{
+    /*Modo Escuro*/
+    background-color: var(--cor-elemento-reverso);
 }
 #video > h2{
     padding-bottom: 10px;
@@ -184,6 +219,11 @@ iframe{
     border-radius: 10px;
     font-weight: bold;
     padding-bottom: 5px;
+    transition: background-color 0.3s;
+}
+body.escuro #skills{
+    /*Modo Escuro*/
+    background-color: var(--cor-elemento-reverso);
 }
 #skills > h2{
     padding: 20px;
@@ -197,6 +237,7 @@ iframe{
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
 meter{
     width: 100%;
     appearance: none;
@@ -205,16 +246,28 @@ meter::-webkit-meter-bar {
     background: var(--cor-defundo);
     border-radius: 20px;
 }
-
+body.escuro meter::-webkit-meter-bar{
+    /*Modo Escuro*/
+    background-color: var(--cor-defundo-reverso);
+}
 meter::-webkit-meter-optimum-value {
     background: var(--cor-elemento);
     border-radius: 20px;
+}
+body.escuro meter::-webkit-meter-optimum-value{
+    /*Modo Escuro*/
+    background-color: #A73917;
 }
 #formacao{
     padding: 20px;
     grid-area: 5/1/6/-1;
     background-color: white;
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+body.escuro #formacao{
+    /*Modo Escuro*/
+    background-color: var(--cor-elemento-reverso);
 }
 #formacao > h2{
     padding-bottom: 0;
@@ -225,6 +278,12 @@ meter::-webkit-meter-optimum-value {
     padding-left: 15px;
     border-left: 5px solid var(--cor-elemento);
     margin-top: 20px;
+    transition: border-left 0.80s ease;
+}
+body.escuro #formacao > div{
+    /*Modo Escuro*/
+    background-color: var(--cor-defundo-reverso);
+    border-left: 5px solid #A73917;
 }
 #formacao > div >span{
     font-size: small;
@@ -245,12 +304,22 @@ meter::-webkit-meter-optimum-value {
 
     transition: border-left 0.6s;
 }
+body.escuro #formacao > div:hover{
+    border-left: 15px solid var(--cor-principal-reverso);
+}
 #projetos{
     grid-area: 7 / 1 / -1 / -1;
     padding: 20px;
     padding-bottom: 20px;
     background-color: white;
     border-radius: 10px;
+
+    transition: background-color 0.3s;
+    
+}
+body.escuro #projetos{
+    /*Modo Escuro*/
+    background-color: var(--cor-elemento-reverso);
 }
 .projeto{
     margin-top: 20px;
@@ -259,12 +328,23 @@ meter::-webkit-meter-optimum-value {
     border-radius: 10px;
     border-left: 5px solid var(--cor-elemento);
     line-height: 1.5;
+
+    transition: border-left 0.80s ;
+}
+body.escuro .projeto{
+    /*Modo Escuro*/
+    background-color: var(--cor-defundo-reverso);
+    border-left: 5px solid #A73917;
 }
 .projeto:hover{
     cursor: pointer;
     border-left: 15px solid var(--cor-principal);
     transition: border-left 0.5s;
     transition-timing-function: ease;
+}
+body.escuro .projeto:hover{
+    /*Modo Escuro*/
+    border-left: 15px solid var(--cor-principal-reverso);
 }
 .imagem{
     margin-bottom: 10px;
@@ -298,4 +378,18 @@ footer{
     align-items: center;
     background-color: var(--cor-principal);
     color: white;
+
+    transition: background-color 0.3s;
+}
+body.escuro footer{
+    /*Modo Escuro*/
+    background-color: var(--cor-principal-reverso);
+}
+body.escuro footer > p{
+    /*Modo Escuro*/
+    color: var(--cor-defundo-reverso)
+}
+body.escuro footer p> strong{
+    /*Modo Escuro*/
+    color: var(--cor-defundo-reverso)
 }
