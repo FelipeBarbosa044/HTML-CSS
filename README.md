@@ -12,7 +12,7 @@ Repository created to store exercises, challenges and projects developed during 
 * Media Queries
 * Practical Projects and Challenges
 
-## Projetos em Destaque
+## Featured Projects
 
 * Curiosidades de Tecnologia
 * Projeto Cordel
@@ -20,7 +20,7 @@ Repository created to store exercises, challenges and projects developed during 
 * Tela de Login
 * Projeto Portfólio
 
-## Demonstrações
+## Live Demos
 
 <a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%202/Desafio%2010/index.html" target="_blank">Curiosidades de Tecnologia</a>
 
