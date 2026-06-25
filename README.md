@@ -1,19 +1,37 @@
 # HTML-CSS
-Curso de HTML5 e CSS3 
 
-Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
+Repository created to store exercises, challenges and projects developed during my HTML5 and CSS3 studies.
 
- <a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%202/Desafio%2010/index.html" target="_blank">SITE MODULO 2 (Eu que fiz)</a>
+## Contents
 
- <a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%202/Desafio%2010%20(Com%20o%20guanabara)/ex10.html" target="_blank">SITE MODULO 2 (Resolução)</a>
+* HTML5 Fundamentals
+* CSS3 Fundamentals
+* Responsive Design
+* Forms
+* Flexbox
+* Media Queries
+* Practical Projects and Challenges
 
+## Projetos em Destaque
 
- <a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%203/Projeto-cordel/index.html" target="_blank">SITE MODULO 3 (Eu que fiz)</a>
+* Curiosidades de Tecnologia
+* Projeto Cordel
+* Projeto Social
+* Tela de Login
+* Projeto Portfólio
 
-<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%203/Projeto-cordel(Comguanabara)/index.html" target="_blank">SITE MODULO 3 (Resolução)</a>
+## Demonstrações
 
- 
-<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social/index.html" target="_blank">SITE MODULO 4 (Eu que fiz)</a>
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%202/Desafio%2010/index.html" target="_blank">Curiosidades de Tecnologia</a>
 
-<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social(comGuanabara)/index.html" target="_blank">SITE MODULO 4 (Resolução)</a>
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/M%C3%B3dulo%203/Projeto-cordel/index.html" target="_blank">Projeto Cordel</a>
 
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-Social/index.html" target="_blank">Projeto Social</a>
+
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 4/Projeto-TelaLogin/index.html" target="_blank">Tela de Login</a>
+
+<a href="https://felipebarbosa044.github.io/HTML-CSS/Desafios/Módulo 5/projeto-portfolio/index.html" target="_blank">Projeto Portfólio</a>
+
+## Purpose
+
+This repository documents my learning journey in HTML and CSS through exercises, challenges and practical projects.
