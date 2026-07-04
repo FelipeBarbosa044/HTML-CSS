@@ -6,10 +6,19 @@ Repository created to store exercises, challenges and projects developed during 
 
 * HTML5 Fundamentals
 * CSS3 Fundamentals
-* Responsive Design
+* Semantic HTML
+* Lists and Tables
 * Forms
+* Links and Navigation
+* Images and Multimedia
+* CSS Selectors
+* Box Model
+* Positioning
 * Flexbox
+* CSS Grid Layout
+* Responsive Design
 * Media Queries
+* Animations and Transitions
 * Practical Projects and Challenges
 
 ## Featured Projects
